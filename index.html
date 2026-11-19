@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ensight-AI | AI that finds hidden heart disease in ECG images</title>
+  <meta name="description" content="Ensight-AI is a Yale spinout building deep learning that detects structural heart disease from images of standard ECGs. Our lead product, ECGvision-TTR, received FDA Breakthrough Device Designation for early detection of ATTR cardiomyopathy.">
+  <link rel="canonical" href="https://www.ensight-ai.com/">
+  <meta name="theme-color" content="#0b1220">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ensight-AI">
+  <meta property="og:title" content="Ensight-AI | AI that finds hidden heart disease in ECG images">
+  <meta property="og:description" content="Deep learning that detects structural heart disease from standard ECG images. ECGvision-TTR: FDA Breakthrough Device Designation for early detection of ATTR cardiomyopathy.">
+  <meta property="og:url" content="https://www.ensight-ai.com/">
+  <meta property="og:image" content="https://www.ensight-ai.com/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ensight-AI | AI that finds hidden heart disease in ECG images">
+  <meta name="twitter:description" content="Deep learning that detects structural heart disease from standard ECG images.">
+  <meta name="twitter:image" content="https://www.ensight-ai.com/assets/og-image.png">
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Ensight-AI, Inc.",
+    "url": "https://www.ensight-ai.com/",
+    "logo": "https://www.ensight-ai.com/assets/apple-touch-icon.png",
+    "email": "contact@ensight-ai.com",
+    "description": "Ensight-AI develops deep learning that detects structural heart disease from images of standard electrocardiograms (ECGs)."
+  }
+  </script>
+  <script>document.documentElement.classList.remove('no-js');</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="header" id="top">
+  <div class="wrap header__inner">
+    <a class="brand" href="/" aria-label="Ensight-AI home">
+      <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#1d2944"/><path d="M3 18 H10 L12.5 13 L15 23 L18 6 L21 26 L23 18 H29" fill="none" stroke="#ff5a61" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      Ensight-AI
+    </a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="nav" id="nav" aria-label="Primary">
+      <a href="#how">How it works</a>
+      <a href="#product">ECGvision-TTR</a>
+      <a href="#pipeline">Pipeline</a>
+      <a href="#science">Science</a>
+      <a class="btn btn--primary" href="#contact">Contact us</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap hero__grid">
+      <div>
+        <div class="badge"><span class="badge__dot">FDA</span> Breakthrough Device Designation &middot; ECGvision-TTR</div>
+        <h1>Hidden heart disease, found in the <em>ECGs you already have.</em></h1>
+        <p class="lede">Ensight-AI builds deep learning that reads images of standard 12-lead ECGs, including PDFs, scanned printouts, and photographs, to detect structural heart disease that today requires advanced cardiac imaging to diagnose.</p>
+        <div class="hero__ctas">
+          <a class="btn btn--primary" href="#contact">Partner with us
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+          <a class="btn btn--ghost" href="#science">See the evidence</a>
+        </div>
+      </div>
+
+      <div aria-hidden="true">
+        <div class="ecg-card">
+          <div class="ecg-card__top"><span>12-LEAD ECG &middot; IMAGE INPUT</span><span>25 mm/s &middot; 10 mm/mV</span></div>
+          <svg viewBox="0 0 560 330">
+            <text class="lead-label" x="10" y="32">I</text><path class="trace" transform="translate(34 46)" d="M0.0 -0.0 2.6 -0.0 5.2 -0.0 7.8 -0.1 10.4 -0.3 13.0 -0.9 15.6 -2.1 18.2 -3.4 20.8 -4.0 23.4 -3.4 26.0 -2.1 28.6 -0.9 31.2 -0.3 33.8 -0.1 36.4 -0.0 39.0 0.0 39.5 0.0 40.0 0.1 40.6 0.2 41.1 0.5 41.6 0.9 42.1 1.4 42.6 1.7 43.2 1.3 43.7 -0.3 44.2 -3.3 44.7 -7.9 45.2 -13.2 45.8 -18.4 46.3 -22.1 46.8 -23.3 47.3 -21.6 47.8 -17.4 48.4 -11.8 48.9 -6.1 49.4 -1.4 49.9 1.7 50.4 3.3 51.0 3.5 51.5 3.0 52.0 2.2 52.5 1.4 53.0 0.8 53.6 0.4 54.1 0.2 54.6 0.0 57.2 -0.1 59.8 -0.2 62.4 -0.5 65.0 -0.9 67.6 -1.7 70.2 -2.9 72.8 -4.2 75.4 -5.6 78.0 -6.6 80.6 -7.0 83.2 -6.6 85.8 -5.6 88.4 -4.2 91.0 -2.9 93.6 -1.7 96.2 -0.9 98.8 -0.5 101.4 -0.2 104.0 -0.1 106.6 -0.0 109.2 -0.0 111.8 -0.0 114.4 -0.0 117.0 -0.0 119.6 -0.0 122.2 -0.0 124.8 -0.0 127.4 -0.0 130.0 -0.0 130.0 -0.0 132.6 -0.0 135.2 -0.0 137.8 -0.1 140.4 -0.3 143.0 -0.9 145.6 -2.1 148.2 -3.4 150.8 -4.0 153.4 -3.4 156.0 -2.1 158.6 -0.9 161.2 -0.3 163.8 -0.1 166.4 -0.0 169.0 0.0 169.5 0.0 170.0 0.1 170.6 0.2 171.1 0.5 171.6 0.9 172.1 1.4 172.6 1.7 173.2 1.3 173.7 -0.3 174.2 -3.3 174.7 -7.9 175.2 -13.2 175.8 -18.4 176.3 -22.1 176.8 -23.3 177.3 -21.6 177.8 -17.4 178.4 -11.8 178.9 -6.1 179.4 -1.4 179.9 1.7 180.4 3.3 181.0 3.5 181.5 3.0 182.0 2.2 182.5 1.4 183.0 0.8 183.6 0.4 184.1 0.2 184.6 0.0 187.2 -0.1 189.8 -0.2 192.4 -0.5 195.0 -0.9 197.6 -1.7 200.2 -2.9 202.8 -4.2 205.4 -5.6 208.0 -6.6 210.6 -7.0 213.2 -6.6 215.8 -5.6 218.4 -4.2 221.0 -2.9 223.6 -1.7 226.2 -0.9 228.8 -0.5 231.4 -0.2 234.0 -0.1 236.6 -0.0 239.2 -0.0 241.8 -0.0 244.4 -0.0 247.0 -0.0 249.6 -0.0 252.2 -0.0 254.8 -0.0 257.4 -0.0 260.0 -0.0 260.0 -0.0 262.6 -0.0 265.2 -0.0 267.8 -0.1 270.4 -0.3 273.0 -0.9 275.6 -2.1 278.2 -3.4 280.8 -4.0 283.4 -3.4 286.0 -2.1 288.6 -0.9 291.2 -0.3 293.8 -0.1 296.4 -0.0 299.0 0.0 299.5 0.0 300.0 0.1 300.6 0.2 301.1 0.5 301.6 0.9 302.1 1.4 302.6 1.7 303.2 1.3 303.7 -0.3 304.2 -3.3 304.7 -7.9 305.2 -13.2 305.8 -18.4 306.3 -22.1 306.8 -23.3 307.3 -21.6 307.8 -17.4 308.4 -11.8 308.9 -6.1 309.4 -1.4 309.9 1.7 310.4 3.3 311.0 3.5 311.5 3.0 312.0 2.2 312.5 1.4 313.0 0.8 313.6 0.4 314.1 0.2 314.6 0.0 317.2 -0.1 319.8 -0.2 322.4 -0.5 325.0 -0.9 327.6 -1.7 330.2 -2.9 332.8 -4.2 335.4 -5.6 338.0 -6.6 340.6 -7.0 343.2 -6.6 345.8 -5.6 348.4 -4.2 351.0 -2.9 353.6 -1.7 356.2 -0.9 358.8 -0.5 361.4 -0.2 364.0 -0.1 366.6 -0.0 369.2 -0.0 371.8 -0.0 374.4 -0.0 377.0 -0.0 379.6 -0.0 382.2 -0.0 384.8 -0.0 387.4 -0.0 390.0 -0.0 390.0 -0.0 392.6 -0.0 395.2 -0.0 397.8 -0.1 400.4 -0.3 403.0 -0.9 405.6 -2.1 408.2 -3.4 410.8 -4.0 413.4 -3.4 416.0 -2.1 418.6 -0.9 421.2 -0.3 423.8 -0.1 426.4 -0.0 429.0 0.0 429.5 0.0 430.0 0.1 430.6 0.2 431.1 0.5 431.6 0.9 432.1 1.4 432.6 1.7 433.2 1.3 433.7 -0.3 434.2 -3.3 434.7 -7.9 435.2 -13.2 435.8 -18.4 436.3 -22.1 436.8 -23.3 437.3 -21.6 437.8 -17.4 438.4 -11.8 438.9 -6.1 439.4 -1.4 439.9 1.7 440.4 3.3 441.0 3.5 441.5 3.0 442.0 2.2 442.5 1.4 443.0 0.8 443.6 0.4 444.1 0.2 444.6 0.0 447.2 -0.1 449.8 -0.2 452.4 -0.5 455.0 -0.9 457.6 -1.7 460.2 -2.9 462.8 -4.2 465.4 -5.6 468.0 -6.6 470.6 -7.0 473.2 -6.6 475.8 -5.6 478.4 -4.2 481.0 -2.9 483.6 -1.7 486.2 -0.9 488.8 -0.5 491.4 -0.2 494.0 -0.1 496.6 -0.0 499.2 -0.0 501.8 -0.0 504.4 -0.0 507.0 -0.0 509.6 -0.0 512.2 -0.0 514.8 -0.0 517.4 -0.0 520.0 -0.0"/>
+            <text class="lead-label" x="10" y="94">II</text><path class="trace" transform="translate(34 108)" d="M0.0 -2.6 2.6 -4.2 5.2 -5.0 7.8 -4.2 10.4 -2.6 13.0 -1.2 15.6 -0.4 18.2 -0.1 20.8 -0.0 23.4 0.0 23.9 0.0 24.4 0.0 25.0 0.1 25.5 0.3 26.0 0.5 26.5 0.8 27.0 0.7 27.6 -0.1 28.1 -2.1 28.6 -5.7 29.1 -11.0 29.6 -17.3 30.2 -23.4 30.7 -27.8 31.2 -29.2 31.7 -27.1 32.2 -21.8 32.8 -14.9 33.3 -7.8 33.8 -2.0 34.3 1.9 34.8 3.8 35.4 4.2 35.9 3.6 36.4 2.6 36.9 1.7 37.4 0.9 38.0 0.5 38.5 0.2 39.0 0.1 41.6 -0.1 44.2 -0.3 46.8 -0.6 49.4 -1.2 52.0 -2.2 54.6 -3.7 57.2 -5.5 59.8 -7.2 62.4 -8.5 65.0 -9.0 67.6 -8.5 70.2 -7.2 72.8 -5.5 75.4 -3.7 78.0 -2.2 80.6 -1.2 83.2 -0.6 85.8 -0.3 88.4 -0.1 91.0 -0.0 93.6 -0.0 96.2 -0.0 98.8 -0.0 101.4 -0.0 104.0 -0.0 106.6 -0.0 109.2 -0.0 111.8 -0.0 114.4 -0.0 114.4 -0.0 117.0 -0.0 119.6 -0.0 122.2 -0.1 124.8 -0.4 127.4 -1.2 130.0 -2.6 132.6 -4.2 135.2 -5.0 137.8 -4.2 140.4 -2.6 143.0 -1.2 145.6 -0.4 148.2 -0.1 150.8 -0.0 153.4 0.0 153.9 0.0 154.4 0.0 155.0 0.1 155.5 0.3 156.0 0.5 156.5 0.8 157.0 0.7 157.6 -0.1 158.1 -2.1 158.6 -5.7 159.1 -11.0 159.6 -17.3 160.2 -23.4 160.7 -27.8 161.2 -29.2 161.7 -27.1 162.2 -21.8 162.8 -14.9 163.3 -7.8 163.8 -2.0 164.3 1.9 164.8 3.8 165.4 4.2 165.9 3.6 166.4 2.6 166.9 1.7 167.4 0.9 168.0 0.5 168.5 0.2 169.0 0.1 171.6 -0.1 174.2 -0.3 176.8 -0.6 179.4 -1.2 182.0 -2.2 184.6 -3.7 187.2 -5.5 189.8 -7.2 192.4 -8.5 195.0 -9.0 197.6 -8.5 200.2 -7.2 202.8 -5.5 205.4 -3.7 208.0 -2.2 210.6 -1.2 213.2 -0.6 215.8 -0.3 218.4 -0.1 221.0 -0.0 223.6 -0.0 226.2 -0.0 228.8 -0.0 231.4 -0.0 234.0 -0.0 236.6 -0.0 239.2 -0.0 241.8 -0.0 244.4 -0.0 244.4 -0.0 247.0 -0.0 249.6 -0.0 252.2 -0.1 254.8 -0.4 257.4 -1.2 260.0 -2.6 262.6 -4.2 265.2 -5.0 267.8 -4.2 270.4 -2.6 273.0 -1.2 275.6 -0.4 278.2 -0.1 280.8 -0.0 283.4 0.0 283.9 0.0 284.4 0.0 285.0 0.1 285.5 0.3 286.0 0.5 286.5 0.8 287.0 0.7 287.6 -0.1 288.1 -2.1 288.6 -5.7 289.1 -11.0 289.6 -17.3 290.2 -23.4 290.7 -27.8 291.2 -29.2 291.7 -27.1 292.2 -21.8 292.8 -14.9 293.3 -7.8 293.8 -2.0 294.3 1.9 294.8 3.8 295.4 4.2 295.9 3.6 296.4 2.6 296.9 1.7 297.4 0.9 298.0 0.5 298.5 0.2 299.0 0.1 301.6 -0.1 304.2 -0.3 306.8 -0.6 309.4 -1.2 312.0 -2.2 314.6 -3.7 317.2 -5.5 319.8 -7.2 322.4 -8.5 325.0 -9.0 327.6 -8.5 330.2 -7.2 332.8 -5.5 335.4 -3.7 338.0 -2.2 340.6 -1.2 343.2 -0.6 345.8 -0.3 348.4 -0.1 351.0 -0.0 353.6 -0.0 356.2 -0.0 358.8 -0.0 361.4 -0.0 364.0 -0.0 366.6 -0.0 369.2 -0.0 371.8 -0.0 374.4 -0.0 374.4 -0.0 377.0 -0.0 379.6 -0.0 382.2 -0.1 384.8 -0.4 387.4 -1.2 390.0 -2.6 392.6 -4.2 395.2 -5.0 397.8 -4.2 400.4 -2.6 403.0 -1.2 405.6 -0.4 408.2 -0.1 410.8 -0.0 413.4 0.0 413.9 0.0 414.4 0.0 415.0 0.1 415.5 0.3 416.0 0.5 416.5 0.8 417.0 0.7 417.6 -0.1 418.1 -2.1 418.6 -5.7 419.1 -11.0 419.6 -17.3 420.2 -23.4 420.7 -27.8 421.2 -29.2 421.7 -27.1 422.2 -21.8 422.8 -14.9 423.3 -7.8 423.8 -2.0 424.3 1.9 424.8 3.8 425.4 4.2 425.9 3.6 426.4 2.6 426.9 1.7 427.4 0.9 428.0 0.5 428.5 0.2 429.0 0.1 431.6 -0.1 434.2 -0.3 436.8 -0.6 439.4 -1.2 442.0 -2.2 444.6 -3.7 447.2 -5.5 449.8 -7.2 452.4 -8.5 455.0 -9.0 457.6 -8.5 460.2 -7.2 462.8 -5.5 465.4 -3.7 468.0 -2.2 470.6 -1.2 473.2 -0.6 475.8 -0.3 478.4 -0.1 481.0 -0.0 483.6 -0.0 486.2 -0.0 488.8 -0.0 491.4 -0.0 494.0 -0.0 496.6 -0.0 499.2 -0.0 501.8 -0.0 504.4 -0.0 504.4 -0.0 507.0 -0.0 509.6 -0.0 512.2 -0.1 514.8 -0.4 517.4 -1.2 520.0 -2.6"/>
+            <text class="lead-label" x="10" y="156">V1</text><path class="trace" transform="translate(34 170)" d="M2.6 -0.1 5.2 -0.0 7.8 -0.0 8.3 -0.0 8.8 -0.0 9.4 -0.0 9.9 -0.0 10.4 -0.0 10.9 -0.1 11.4 -0.2 12.0 -0.5 12.5 -0.9 13.0 -1.7 13.5 -2.8 14.0 -4.0 14.6 -5.1 15.1 -5.3 15.6 -4.3 16.1 -1.4 16.6 3.2 17.2 9.1 17.7 15.2 18.2 20.3 18.7 23.0 19.2 22.8 19.8 20.0 20.3 15.7 20.8 11.0 21.3 6.8 21.8 3.8 22.4 1.9 22.9 0.9 23.4 0.4 26.0 0.0 28.6 0.1 31.2 0.2 33.8 0.4 36.4 0.7 39.0 1.2 41.6 1.8 44.2 2.4 46.8 2.8 49.4 3.0 52.0 2.8 54.6 2.4 57.2 1.8 59.8 1.2 62.4 0.7 65.0 0.4 67.6 0.2 70.2 0.1 72.8 0.0 75.4 0.0 78.0 0.0 80.6 0.0 83.2 0.0 85.8 0.0 88.4 0.0 91.0 0.0 93.6 0.0 96.2 0.0 98.8 0.0 98.8 -0.0 101.4 -0.0 104.0 -0.0 106.6 -0.1 109.2 -0.2 111.8 -0.7 114.4 -1.6 117.0 -2.5 119.6 -3.0 122.2 -2.5 124.8 -1.6 127.4 -0.7 130.0 -0.2 132.6 -0.1 135.2 -0.0 137.8 -0.0 138.3 -0.0 138.8 -0.0 139.4 -0.0 139.9 -0.0 140.4 -0.0 140.9 -0.1 141.4 -0.2 142.0 -0.5 142.5 -0.9 143.0 -1.7 143.5 -2.8 144.0 -4.0 144.6 -5.1 145.1 -5.3 145.6 -4.3 146.1 -1.4 146.6 3.2 147.2 9.1 147.7 15.2 148.2 20.3 148.7 23.0 149.2 22.8 149.8 20.0 150.3 15.7 150.8 11.0 151.3 6.8 151.8 3.8 152.4 1.9 152.9 0.9 153.4 0.4 156.0 0.0 158.6 0.1 161.2 0.2 163.8 0.4 166.4 0.7 169.0 1.2 171.6 1.8 174.2 2.4 176.8 2.8 179.4 3.0 182.0 2.8 184.6 2.4 187.2 1.8 189.8 1.2 192.4 0.7 195.0 0.4 197.6 0.2 200.2 0.1 202.8 0.0 205.4 0.0 208.0 0.0 210.6 0.0 213.2 0.0 215.8 0.0 218.4 0.0 221.0 0.0 223.6 0.0 226.2 0.0 228.8 0.0 228.8 -0.0 231.4 -0.0 234.0 -0.0 236.6 -0.1 239.2 -0.2 241.8 -0.7 244.4 -1.6 247.0 -2.5 249.6 -3.0 252.2 -2.5 254.8 -1.6 257.4 -0.7 260.0 -0.2 262.6 -0.1 265.2 -0.0 267.8 -0.0 268.3 -0.0 268.8 -0.0 269.4 -0.0 269.9 -0.0 270.4 -0.0 270.9 -0.1 271.4 -0.2 272.0 -0.5 272.5 -0.9 273.0 -1.7 273.5 -2.8 274.0 -4.0 274.6 -5.1 275.1 -5.3 275.6 -4.3 276.1 -1.4 276.6 3.2 277.2 9.1 277.7 15.2 278.2 20.3 278.7 23.0 279.2 22.8 279.8 20.0 280.3 15.7 280.8 11.0 281.3 6.8 281.8 3.8 282.4 1.9 282.9 0.9 283.4 0.4 286.0 0.0 288.6 0.1 291.2 0.2 293.8 0.4 296.4 0.7 299.0 1.2 301.6 1.8 304.2 2.4 306.8 2.8 309.4 3.0 312.0 2.8 314.6 2.4 317.2 1.8 319.8 1.2 322.4 0.7 325.0 0.4 327.6 0.2 330.2 0.1 332.8 0.0 335.4 0.0 338.0 0.0 340.6 0.0 343.2 0.0 345.8 0.0 348.4 0.0 351.0 0.0 353.6 0.0 356.2 0.0 358.8 0.0 358.8 -0.0 361.4 -0.0 364.0 -0.0 366.6 -0.1 369.2 -0.2 371.8 -0.7 374.4 -1.6 377.0 -2.5 379.6 -3.0 382.2 -2.5 384.8 -1.6 387.4 -0.7 390.0 -0.2 392.6 -0.1 395.2 -0.0 397.8 -0.0 398.3 -0.0 398.8 -0.0 399.4 -0.0 399.9 -0.0 400.4 -0.0 400.9 -0.1 401.4 -0.2 402.0 -0.5 402.5 -0.9 403.0 -1.7 403.5 -2.8 404.0 -4.0 404.6 -5.1 405.1 -5.3 405.6 -4.3 406.1 -1.4 406.6 3.2 407.2 9.1 407.7 15.2 408.2 20.3 408.7 23.0 409.2 22.8 409.8 20.0 410.3 15.7 410.8 11.0 411.3 6.8 411.8 3.8 412.4 1.9 412.9 0.9 413.4 0.4 416.0 0.0 418.6 0.1 421.2 0.2 423.8 0.4 426.4 0.7 429.0 1.2 431.6 1.8 434.2 2.4 436.8 2.8 439.4 3.0 442.0 2.8 444.6 2.4 447.2 1.8 449.8 1.2 452.4 0.7 455.0 0.4 457.6 0.2 460.2 0.1 462.8 0.0 465.4 0.0 468.0 0.0 470.6 0.0 473.2 0.0 475.8 0.0 478.4 0.0 481.0 0.0 483.6 0.0 486.2 0.0 488.8 0.0 488.8 -0.0 491.4 -0.0 494.0 -0.0 496.6 -0.1 499.2 -0.2 501.8 -0.7 504.4 -1.6 507.0 -2.5 509.6 -3.0 512.2 -2.5 514.8 -1.6 517.4 -0.7 520.0 -0.2"/>
+            <text class="lead-label" x="10" y="218">V3</text><path class="trace" transform="translate(34 232)" d="M0.0 -16.1 0.5 -13.5 1.0 -8.5 1.6 -2.0 2.1 4.7 2.6 10.2 3.1 13.5 3.6 14.3 4.2 13.0 4.7 10.3 5.2 7.2 5.7 4.5 6.2 2.5 6.8 1.2 7.3 0.5 7.8 0.2 10.4 -0.1 13.0 -0.3 15.6 -0.7 18.2 -1.5 20.8 -2.7 23.4 -4.5 26.0 -6.7 28.6 -8.8 31.2 -10.4 33.8 -11.0 36.4 -10.4 39.0 -8.8 41.6 -6.7 44.2 -4.5 46.8 -2.7 49.4 -1.5 52.0 -0.7 54.6 -0.3 57.2 -0.1 59.8 -0.0 62.4 -0.0 65.0 -0.0 67.6 -0.0 70.2 -0.0 72.8 -0.0 75.4 -0.0 78.0 -0.0 80.6 -0.0 83.2 -0.0 83.2 -0.0 85.8 -0.0 88.4 -0.0 91.0 -0.1 93.6 -0.2 96.2 -0.7 98.8 -1.6 101.4 -2.5 104.0 -3.0 106.6 -2.5 109.2 -1.6 111.8 -0.7 114.4 -0.2 117.0 -0.1 119.6 -0.0 122.2 0.0 122.7 0.0 123.2 0.1 123.8 0.1 124.3 0.3 124.8 0.6 125.3 0.9 125.8 1.1 126.4 0.7 126.9 -0.4 127.4 -2.7 127.9 -6.0 128.4 -9.9 129.0 -13.6 129.5 -15.9 130.0 -16.1 130.5 -13.5 131.0 -8.5 131.6 -2.0 132.1 4.7 132.6 10.2 133.1 13.5 133.6 14.3 134.2 13.0 134.7 10.3 135.2 7.2 135.7 4.5 136.2 2.5 136.8 1.2 137.3 0.5 137.8 0.2 140.4 -0.1 143.0 -0.3 145.6 -0.7 148.2 -1.5 150.8 -2.7 153.4 -4.5 156.0 -6.7 158.6 -8.8 161.2 -10.4 163.8 -11.0 166.4 -10.4 169.0 -8.8 171.6 -6.7 174.2 -4.5 176.8 -2.7 179.4 -1.5 182.0 -0.7 184.6 -0.3 187.2 -0.1 189.8 -0.0 192.4 -0.0 195.0 -0.0 197.6 -0.0 200.2 -0.0 202.8 -0.0 205.4 -0.0 208.0 -0.0 210.6 -0.0 213.2 -0.0 213.2 -0.0 215.8 -0.0 218.4 -0.0 221.0 -0.1 223.6 -0.2 226.2 -0.7 228.8 -1.6 231.4 -2.5 234.0 -3.0 236.6 -2.5 239.2 -1.6 241.8 -0.7 244.4 -0.2 247.0 -0.1 249.6 -0.0 252.2 0.0 252.7 0.0 253.2 0.1 253.8 0.1 254.3 0.3 254.8 0.6 255.3 0.9 255.8 1.1 256.4 0.7 256.9 -0.4 257.4 -2.7 257.9 -6.0 258.4 -9.9 259.0 -13.6 259.5 -15.9 260.0 -16.1 260.5 -13.5 261.0 -8.5 261.6 -2.0 262.1 4.7 262.6 10.2 263.1 13.5 263.6 14.3 264.2 13.0 264.7 10.3 265.2 7.2 265.7 4.5 266.2 2.5 266.8 1.2 267.3 0.5 267.8 0.2 270.4 -0.1 273.0 -0.3 275.6 -0.7 278.2 -1.5 280.8 -2.7 283.4 -4.5 286.0 -6.7 288.6 -8.8 291.2 -10.4 293.8 -11.0 296.4 -10.4 299.0 -8.8 301.6 -6.7 304.2 -4.5 306.8 -2.7 309.4 -1.5 312.0 -0.7 314.6 -0.3 317.2 -0.1 319.8 -0.0 322.4 -0.0 325.0 -0.0 327.6 -0.0 330.2 -0.0 332.8 -0.0 335.4 -0.0 338.0 -0.0 340.6 -0.0 343.2 -0.0 343.2 -0.0 345.8 -0.0 348.4 -0.0 351.0 -0.1 353.6 -0.2 356.2 -0.7 358.8 -1.6 361.4 -2.5 364.0 -3.0 366.6 -2.5 369.2 -1.6 371.8 -0.7 374.4 -0.2 377.0 -0.1 379.6 -0.0 382.2 0.0 382.7 0.0 383.2 0.1 383.8 0.1 384.3 0.3 384.8 0.6 385.3 0.9 385.8 1.1 386.4 0.7 386.9 -0.4 387.4 -2.7 387.9 -6.0 388.4 -9.9 389.0 -13.6 389.5 -15.9 390.0 -16.1 390.5 -13.5 391.0 -8.5 391.6 -2.0 392.1 4.7 392.6 10.2 393.1 13.5 393.6 14.3 394.2 13.0 394.7 10.3 395.2 7.2 395.7 4.5 396.2 2.5 396.8 1.2 397.3 0.5 397.8 0.2 400.4 -0.1 403.0 -0.3 405.6 -0.7 408.2 -1.5 410.8 -2.7 413.4 -4.5 416.0 -6.7 418.6 -8.8 421.2 -10.4 423.8 -11.0 426.4 -10.4 429.0 -8.8 431.6 -6.7 434.2 -4.5 436.8 -2.7 439.4 -1.5 442.0 -0.7 444.6 -0.3 447.2 -0.1 449.8 -0.0 452.4 -0.0 455.0 -0.0 457.6 -0.0 460.2 -0.0 462.8 -0.0 465.4 -0.0 468.0 -0.0 470.6 -0.0 473.2 -0.0 473.2 -0.0 475.8 -0.0 478.4 -0.0 481.0 -0.1 483.6 -0.2 486.2 -0.7 488.8 -1.6 491.4 -2.5 494.0 -3.0 496.6 -2.5 499.2 -1.6 501.8 -0.7 504.4 -0.2 507.0 -0.1 509.6 -0.0 512.2 0.0 512.7 0.0 513.2 0.1 513.8 0.1 514.3 0.3 514.8 0.6 515.3 0.9 515.8 1.1 516.4 0.7 516.9 -0.4 517.4 -2.7 517.9 -6.0 518.4 -9.9 519.0 -13.6 519.5 -15.9 520.0 -16.1"/>
+            <text class="lead-label" x="10" y="280">V5</text><path class="trace" transform="translate(34 294)" d="M0.0 -0.7 2.6 -1.4 5.2 -2.5 7.8 -4.1 10.4 -6.1 13.0 -8.0 15.6 -9.5 18.2 -10.0 20.8 -9.5 23.4 -8.0 26.0 -6.1 28.6 -4.1 31.2 -2.5 33.8 -1.4 36.4 -0.7 39.0 -0.3 41.6 -0.1 44.2 -0.0 46.8 -0.0 49.4 -0.0 52.0 -0.0 54.6 -0.0 57.2 -0.0 59.8 -0.0 62.4 -0.0 65.0 -0.0 67.6 -0.0 67.6 -0.0 70.2 -0.0 72.8 -0.0 75.4 -0.1 78.0 -0.3 80.6 -0.9 83.2 -2.1 85.8 -3.4 88.4 -4.0 91.0 -3.4 93.6 -2.1 96.2 -0.9 98.8 -0.3 101.4 -0.1 104.0 -0.0 106.6 0.0 107.1 0.0 107.6 0.1 108.2 0.3 108.7 0.6 109.2 1.2 109.7 1.8 110.2 2.2 110.8 1.7 111.3 -0.3 111.8 -4.4 112.3 -10.5 112.8 -17.7 113.4 -24.6 113.9 -29.6 114.4 -31.4 114.9 -29.3 115.4 -24.1 116.0 -17.2 116.5 -10.1 117.0 -4.3 117.5 -0.3 118.0 1.8 118.6 2.5 119.1 2.3 119.6 1.7 120.1 1.1 120.6 0.6 121.2 0.3 121.7 0.1 122.2 0.0 124.8 -0.1 127.4 -0.3 130.0 -0.7 132.6 -1.4 135.2 -2.5 137.8 -4.1 140.4 -6.1 143.0 -8.0 145.6 -9.5 148.2 -10.0 150.8 -9.5 153.4 -8.0 156.0 -6.1 158.6 -4.1 161.2 -2.5 163.8 -1.4 166.4 -0.7 169.0 -0.3 171.6 -0.1 174.2 -0.0 176.8 -0.0 179.4 -0.0 182.0 -0.0 184.6 -0.0 187.2 -0.0 189.8 -0.0 192.4 -0.0 195.0 -0.0 197.6 -0.0 197.6 -0.0 200.2 -0.0 202.8 -0.0 205.4 -0.1 208.0 -0.3 210.6 -0.9 213.2 -2.1 215.8 -3.4 218.4 -4.0 221.0 -3.4 223.6 -2.1 226.2 -0.9 228.8 -0.3 231.4 -0.1 234.0 -0.0 236.6 0.0 237.1 0.0 237.6 0.1 238.2 0.3 238.7 0.6 239.2 1.2 239.7 1.8 240.2 2.2 240.8 1.7 241.3 -0.3 241.8 -4.4 242.3 -10.5 242.8 -17.7 243.4 -24.6 243.9 -29.6 244.4 -31.4 244.9 -29.3 245.4 -24.1 246.0 -17.2 246.5 -10.1 247.0 -4.3 247.5 -0.3 248.0 1.8 248.6 2.5 249.1 2.3 249.6 1.7 250.1 1.1 250.6 0.6 251.2 0.3 251.7 0.1 252.2 0.0 254.8 -0.1 257.4 -0.3 260.0 -0.7 262.6 -1.4 265.2 -2.5 267.8 -4.1 270.4 -6.1 273.0 -8.0 275.6 -9.5 278.2 -10.0 280.8 -9.5 283.4 -8.0 286.0 -6.1 288.6 -4.1 291.2 -2.5 293.8 -1.4 296.4 -0.7 299.0 -0.3 301.6 -0.1 304.2 -0.0 306.8 -0.0 309.4 -0.0 312.0 -0.0 314.6 -0.0 317.2 -0.0 319.8 -0.0 322.4 -0.0 325.0 -0.0 327.6 -0.0 327.6 -0.0 330.2 -0.0 332.8 -0.0 335.4 -0.1 338.0 -0.3 340.6 -0.9 343.2 -2.1 345.8 -3.4 348.4 -4.0 351.0 -3.4 353.6 -2.1 356.2 -0.9 358.8 -0.3 361.4 -0.1 364.0 -0.0 366.6 0.0 367.1 0.0 367.6 0.1 368.2 0.3 368.7 0.6 369.2 1.2 369.7 1.8 370.2 2.2 370.8 1.7 371.3 -0.3 371.8 -4.4 372.3 -10.5 372.8 -17.7 373.4 -24.6 373.9 -29.6 374.4 -31.4 374.9 -29.3 375.4 -24.1 376.0 -17.2 376.5 -10.1 377.0 -4.3 377.5 -0.3 378.0 1.8 378.6 2.5 379.1 2.3 379.6 1.7 380.1 1.1 380.6 0.6 381.2 0.3 381.7 0.1 382.2 0.0 384.8 -0.1 387.4 -0.3 390.0 -0.7 392.6 -1.4 395.2 -2.5 397.8 -4.1 400.4 -6.1 403.0 -8.0 405.6 -9.5 408.2 -10.0 410.8 -9.5 413.4 -8.0 416.0 -6.1 418.6 -4.1 421.2 -2.5 423.8 -1.4 426.4 -0.7 429.0 -0.3 431.6 -0.1 434.2 -0.0 436.8 -0.0 439.4 -0.0 442.0 -0.0 444.6 -0.0 447.2 -0.0 449.8 -0.0 452.4 -0.0 455.0 -0.0 457.6 -0.0 457.6 -0.0 460.2 -0.0 462.8 -0.0 465.4 -0.1 468.0 -0.3 470.6 -0.9 473.2 -2.1 475.8 -3.4 478.4 -4.0 481.0 -3.4 483.6 -2.1 486.2 -0.9 488.8 -0.3 491.4 -0.1 494.0 -0.0 496.6 0.0 497.1 0.0 497.6 0.1 498.2 0.3 498.7 0.6 499.2 1.2 499.7 1.8 500.2 2.2 500.8 1.7 501.3 -0.3 501.8 -4.4 502.3 -10.5 502.8 -17.7 503.4 -24.6 503.9 -29.6 504.4 -31.4 504.9 -29.3 505.4 -24.1 506.0 -17.2 506.5 -10.1 507.0 -4.3 507.5 -0.3 508.0 1.8 508.6 2.5 509.1 2.3 509.6 1.7 510.1 1.1 510.6 0.6 511.2 0.3 511.7 0.1 512.2 0.0 514.8 -0.1 517.4 -0.3 520.0 -0.7"/>
+          </svg>
+          <div class="scan"></div>
+        </div>
+        <div class="result">
+          <div class="result__row"><span class="result__name">ECGvision-TTR</span><span class="result__tag">Illustrative output</span></div>
+          <div class="result__bar"><span></span></div>
+          <p class="result__text">ATTR-CM signature detected: <strong>prioritize for confirmatory imaging</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ JOURNALS ============ -->
+  <section class="journals" aria-label="Peer-reviewed publications">
+    <div class="wrap journals__inner">
+      <span class="journals__label">Validated in peer-reviewed research</span>
+      <ul class="journals__list">
+        <li>JAMA</li><li>NEJM AI</li><li>Circulation</li><li>JACC</li><li>European Heart Journal</li><li>Nature Cardiovascular Research</li><li>Nature Communications</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ PROBLEM ============ -->
+  <section class="section" id="problem">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">The problem</span>
+        <h2>Structural heart disease is common, treatable, and diagnosed too late.</h2>
+        <p class="lede">Amyloid cardiomyopathy, left ventricular systolic dysfunction, hypertrophic cardiomyopathy, and valvular disease are diagnosed with echocardiography, cardiac MRI, or nuclear imaging. Those tests are ordered only once symptoms raise suspicion, so most patients are identified late, when disease is advanced and harder to treat.</p>
+      </div>
+      <div class="cards-3">
+        <article class="card reveal">
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg></div>
+          <h3>Imaging is the bottleneck</h3>
+          <p>Definitive diagnosis depends on tests that are expensive, capacity-limited, and concentrated in specialized centers, out of reach for many patients.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
+          <h3>Symptoms are nonspecific</h3>
+          <p>Conditions like ATTR cardiomyopathy are frequently missed or attributed to other causes, and they disproportionately affect Black individuals.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 20.5 3.5 13.5a5 5 0 0 1 7-7l7 7a5 5 0 0 1-7 7Z"/><path d="m8.5 8.5 7 7"/></svg></div>
+          <h3>Therapies need patients</h3>
+          <p>Effective treatments now exist, and they work best when started early. Clinical trials and approved therapies both depend on finding the right patients sooner.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="section insight" id="how">
+    <div class="wrap split">
+      <div class="reveal">
+        <span class="kicker">Our approach</span>
+        <h2>The ECG is everywhere. We teach it to see what imaging sees.</h2>
+        <p class="lede">The 12-lead ECG is the most widely performed cardiac test: inexpensive, available in nearly every clinic in the world, and usually stored as a PDF or printed image. ECGvision models learn from hundreds of thousands of ECGs paired with echocardiography, cardiac MRI, and nuclear imaging, and they detect signatures of structural disease that are not visible to the human eye.</p>
+        <div class="pills">
+          <span class="pill">Format-independent</span>
+          <span class="pill">No new hardware</span>
+          <span class="pill">Designed for local deployment</span>
+          <span class="pill">12-lead and single-lead ECGs</span>
+        </div>
+      </div>
+      <ol class="steps">
+        <li class="step reveal">
+          <h3>Start with any ECG image</h3>
+          <p>PDF exports, scanned printouts, and photographs of ECGs across standard layouts. No raw-signal access or ECG-vendor integration required.</p>
+        </li>
+        <li class="step reveal">
+          <h3>Detect the hidden signature</h3>
+          <p>Proprietary deep learning models analyze the image and estimate the probability of a specific structural heart disease.</p>
+        </li>
+        <li class="step reveal">
+          <h3>Prioritize confirmatory testing</h3>
+          <p>Flag the patients most likely to benefit from echocardiography or advanced imaging, so scarce diagnostic capacity goes where it matters most.</p>
+        </li>
+        <li class="step reveal">
+          <h3>Scale from one patient to a population</h3>
+          <p>Analyze a single ECG at the point of care, or screen a health system&rsquo;s ECG archive to surface undiagnosed patients.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCT ============ -->
+  <section class="section product" id="product">
+    <div class="wrap">
+      <div class="section-head reveal" style="position:relative;z-index:1">
+        <span class="fda"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8.5 6.5 12 13 4.5"/></svg> FDA Breakthrough Device Designation &middot; February 2024</span>
+        <h2>ECGvision-TTR: earlier detection of ATTR cardiomyopathy</h2>
+        <p class="lede">Transthyretin amyloid cardiomyopathy (ATTR-CM) is a progressive, life-threatening, and widely under-diagnosed cause of heart failure. ECGvision-TTR analyzes an image of a 12-lead ECG to detect the signature of ATTR-CM, helping clinicians identify who should go on to confirmatory imaging.</p>
+      </div>
+
+      <div class="stats">
+        <div class="stat reveal"><div class="stat__num">0.84</div><div class="stat__label">AUROC in internal validation across 44,123 patients</div></div>
+        <div class="stat reveal"><div class="stat__num">0.78&ndash;0.89</div><div class="stat__label">AUROC across 5 external multinational cohorts</div></div>
+        <div class="stat reveal"><div class="stat__num">0.76&ndash;0.91</div><div class="stat__label">AUROC in 3 screening cohorts, including older Black and Hispanic adults with heart failure</div></div>
+        <div class="stat reveal"><div class="stat__num">0.24&nbsp;&rarr;&nbsp;0.66</div><div class="stat__label">Positive predictive value when AI-ECG is followed by AI-enabled echocardiography</div></div>
+      </div>
+      <div class="product__notes">
+        <div class="note reveal"><strong>Specific to amyloid, not just &ldquo;abnormal.&rdquo;</strong> Discrimination held among patients with ATTR-CM mimics, such as left ventricular hypertrophy or severe aortic stenosis without amyloid (AUROC 0.81).</div>
+        <div class="note reveal"><strong>A signal years before diagnosis.</strong> In a separate study, AI-derived ATTR-CM probabilities from ECGs and echocardiograms diverged between future cases and controls as early as 3 years before diagnosis.</div>
+      </div>
+      <p class="source">Sources: Croon PM, et al. <em>JAMA</em>. 2026 (<a href="https://doi.org/10.1001/jama.2026.16785" target="_blank" rel="noopener">doi:10.1001/jama.2026.16785</a>); Oikonomou EK, et al. <em>Eur Heart J</em>. 2025 (<a href="https://doi.org/10.1093/eurheartj/ehaf450" target="_blank" rel="noopener">doi:10.1093/eurheartj/ehaf450</a>). Results describe the AI-ECG research models in retrospective and screening cohorts.</p>
+      <p class="disclaimer">ECGvision-TTR is an investigational device. It has not been cleared or approved by the U.S. Food and Drug Administration and is not commercially available. Breakthrough Device Designation does not constitute FDA clearance or approval.</p>
+    </div>
+  </section>
+
+  <!-- ============ PIPELINE ============ -->
+  <section class="section" id="pipeline">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">Pipeline</span>
+        <h2>One platform, a growing suite of ECG-based diagnostics</h2>
+        <p class="lede">The same image-based approach extends across structural heart diseases, and to the single-lead ECGs recorded by portable and wearable devices.</p>
+      </div>
+      <div class="reveal">
+        <table class="pipeline">
+          <thead><tr><th>Program</th><th>Detects</th><th>Input</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Program">ECGvision-TTR<span class="sub">Lead product</span></td>
+              <td data-label="Detects">Transthyretin amyloid cardiomyopathy</td>
+              <td data-label="Input">12-lead ECG image</td>
+              <td data-label="Status"><span class="chip chip--fda">FDA Breakthrough Device</span><span class="ref">JAMA 2026 &middot; Eur Heart J 2025</span></td>
+            </tr>
+            <tr>
+              <td data-label="Program">Left ventricular systolic dysfunction</td>
+              <td data-label="Detects">LV ejection fraction &lt;40%</td>
+              <td data-label="Input">12-lead ECG image; single-lead ECG</td>
+              <td data-label="Status"><span class="chip chip--val">Multisite validation published</span><span class="ref">Circulation 2023 &middot; npj Digit Med 2023</span></td>
+            </tr>
+            <tr>
+              <td data-label="Program">Hypertrophic cardiomyopathy</td>
+              <td data-label="Detects">HCM confirmed by cardiac MRI or echocardiography</td>
+              <td data-label="Input">12-lead ECG image</td>
+              <td data-label="Status"><span class="chip chip--val">Multinational validation published</span><span class="ref">Nat Cardiovasc Res 2025</span></td>
+            </tr>
+            <tr>
+              <td data-label="Program">Structural heart disease screen</td>
+              <td data-label="Detects">LV dysfunction, moderate&ndash;severe left-sided valve disease, severe LV hypertrophy</td>
+              <td data-label="Input">12-lead ECG image</td>
+              <td data-label="Status"><span class="chip chip--val">Multinational validation published</span><span class="ref">JACC 2025</span></td>
+            </tr>
+            <tr>
+              <td data-label="Program">Wearable &amp; portable screening</td>
+              <td data-label="Detects">Structural heart disease and future heart failure risk</td>
+              <td data-label="Input">Single-lead (lead I) ECG</td>
+              <td data-label="Status"><span class="chip chip--val">Multinational validation published</span><span class="ref">Eur Heart J Digit Health 2025 &middot; JAMA Cardiol 2025</span></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="footnote">Pipeline programs are in development and are not available for clinical use.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PARTNERS ============ -->
+  <section class="section partners" id="partners">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">Who we work with</span>
+        <h2>Built for everyone who needs to find patients earlier</h2>
+      </div>
+      <div class="cards-4">
+        <article class="card reveal">
+          <h3>Health systems</h3>
+          <p>Screen existing ECG archives at population scale to surface undiagnosed patients and direct echocardiography to those most likely to benefit.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Life sciences</h3>
+          <p>Identify eligible patients faster for clinical trials and approved therapies in cardiomyopathy and structural heart disease.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Clinicians</h3>
+          <p>Decision support from a single ECG image, wherever the ECG was acquired, including low-resource and community settings.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Device partners</h3>
+          <p>Noise-resilient single-lead models adapted to the ECGs captured by portable and wearable devices.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SCIENCE ============ -->
+  <section class="section" id="science">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">The science</span>
+        <h2>Built on peer-reviewed science from Yale</h2>
+        <p class="lede">The ECGvision technology was developed in the Cardiovascular Data Science (CarDS) Lab at Yale School of Medicine and validated across health systems and population cohorts in the United States, Europe, and Brazil.</p>
+      </div>
+      <ul class="pubs reveal">
+        <li class="pub"><span class="pub__journal">JAMA<span class="pub__year">2026</span></span><span class="pub__title">Electrocardiogram-based deep learning to prioritize testing for transthyretin amyloid cardiomyopathy<span class="pub__authors">Croon PM, et al.</span></span><a class="pub__link" href="https://doi.org/10.1001/jama.2026.16785" target="_blank" rel="noopener">Read &rarr;</a></li>
+        <li class="pub"><span class="pub__journal">NEJM AI<span class="pub__year">2026</span></span><span class="pub__title">TARGET-AI: a foundational approach for the targeted deployment of AI electrocardiography in the electronic health record<span class="pub__authors">Oikonomou EK, et al.</span></span><a class="pub__link" href="https://doi.org/10.1056/AIoa2500588" target="_blank" rel="noopener">Read &rarr;</a></li>
+        <li class="pub"><span class="pub__journal">European Heart Journal<span class="pub__year">2025</span></span><span class="pub__title">AI-enabled electrocardiography and echocardiography to track preclinical progression of transthyretin amyloid cardiomyopathy<span class="pub__authors">Oikonomou EK, et al.</span></span><a class="pub__link" href="https://doi.org/10.1093/eurheartj/ehaf450" target="_blank" rel="noopener">Read &rarr;</a></li>
+        <li class="pub"><span class="pub__journal">JACC<span class="pub__year">2025</span></span><span class="pub__title">Ensemble deep learning algorithm for structural heart disease screening using electrocardiographic images: PRESENT SHD<span class="pub__authors">Dhingra LS, et al.</span></span><a class="pub__link" href="https://doi.org/10.1016/j.jacc.2025.01.030" target="_blank" rel="noopener">Read &rarr;</a></li>
+        <li class="pub"><span class="pub__journal">Nature Cardiovascular Research<span class="pub__year">2025</span></span><span class="pub__title">Identification of hypertrophic cardiomyopathy on electrocardiographic images with deep learning<span class="pub__authors">Sangha V, et al.</span></span><a class="pub__link" href="https://doi.org/10.1038/s44161-025-00685-3" target="_blank" rel="noopener">Read &rarr;</a></li>
+        <li class="pub"><span class="pub__journal">European Heart Journal<span class="pub__year">2025</span></span><span class="pub__title">Heart failure risk stratification using artificial intelligence applied to electrocardiogram images: a multinational study<span class="pub__authors">Dhingra LS, et al.</span></span><a class="pub__link" href="https://doi.org/10.1093/eurheartj/ehae914" target="_blank" rel="noopener">Read &rarr;</a></li>
+        <li class="pub"><span class="pub__journal">JAMA Cardiology<span class="pub__year">2025</span></span><span class="pub__title">Artificial intelligence&ndash;enabled prediction of heart failure risk from single-lead electrocardiograms<span class="pub__authors">Dhingra LS, et al.</span></span><a class="pub__link" href="https://doi.org/10.1001/jamacardio.2025.0492" target="_blank" rel="noopener">Read &rarr;</a></li>
+        <li class="pub"><span class="pub__journal">Eur Heart J Digital Health<span class="pub__year">2025</span></span><span class="pub__title">Development and multinational validation of an ensemble deep learning algorithm for detecting and predicting structural heart disease using noisy single-lead electrocardiograms<span class="pub__authors">Aminorroaya A, et al.</span></span><a class="pub__link" href="https://doi.org/10.1093/ehjdh/ztaf034" target="_blank" rel="noopener">Read &rarr;</a></li>
+        <li class="pub"><span class="pub__journal">Circulation<span class="pub__year">2023</span></span><span class="pub__title">Detection of left ventricular systolic dysfunction from electrocardiographic images<span class="pub__authors">Sangha V, et al.</span></span><a class="pub__link" href="https://doi.org/10.1161/CIRCULATIONAHA.122.062646" target="_blank" rel="noopener">Read &rarr;</a></li>
+        <li class="pub"><span class="pub__journal">npj Digital Medicine<span class="pub__year">2023</span></span><span class="pub__title">Detection of left ventricular systolic dysfunction from single-lead electrocardiography adapted for portable and wearable devices<span class="pub__authors">Khunte A, et al.</span></span><a class="pub__link" href="https://doi.org/10.1038/s41746-023-00869-w" target="_blank" rel="noopener">Read &rarr;</a></li>
+        <li class="pub"><span class="pub__journal">Nature Communications<span class="pub__year">2022</span></span><span class="pub__title">Automated multilabel diagnosis on electrocardiographic images and signals<span class="pub__authors">Sangha V, et al.</span></span><a class="pub__link" href="https://doi.org/10.1038/s41467-022-29153-3" target="_blank" rel="noopener">Read &rarr;</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ MILESTONES ============ -->
+  <section class="section section--tight insight" id="milestones">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">Milestones</span>
+        <h2>From the lab to the clinic</h2>
+      </div>
+      <ol class="timeline">
+        <li class="milestone reveal"><span class="milestone__date">2022</span><p>Foundational AI for ECG images published in <em>Nature Communications</em></p></li>
+        <li class="milestone reveal"><span class="milestone__date">2023</span><p>Blavatnik Fund for Innovation at Yale award and the Wilson Prize at Yale</p></li>
+        <li class="milestone milestone--key reveal"><span class="milestone__date">Feb 2024</span><p>FDA Breakthrough Device Designation for ECGvision-TTR</p></li>
+        <li class="milestone reveal"><span class="milestone__date">2025</span><p>Multinational validation for structural heart disease, HCM, and heart failure risk in <em>JACC</em>, <em>Nature Cardiovascular Research</em>, and <em>European Heart Journal</em></p></li>
+        <li class="milestone reveal"><span class="milestone__date">2026</span><p>ATTR-CM detection validated across multinational and screening cohorts in <em>JAMA</em></p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact" id="contact">
+    <div class="wrap reveal" style="position:relative;z-index:1">
+      <span class="kicker">Get in touch</span>
+      <h2>Let&rsquo;s find patients earlier, together.</h2>
+      <p class="lede">We work with health systems, life-sciences companies, device makers, and investors. Tell us what you are working on.</p>
+      <div class="contact__ctas">
+        <a class="btn btn--primary" href="mailto:contact@ensight-ai.com?subject=Partnership%20inquiry">Partnership inquiry</a>
+        <a class="btn btn--ghost" href="mailto:contact@ensight-ai.com?subject=Investor%20inquiry">Investor inquiry</a>
+      </div>
+      <p style="margin-top:22px;color:var(--muted-on-dark);font-size:.95rem">or email <a href="mailto:contact@ensight-ai.com" style="color:#fff">contact@ensight-ai.com</a></p>
+    </div>
+    <svg class="contact__line" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 H250 L270 60 L285 70 H330 L340 76 L352 20 L364 96 L374 70 H420 L450 56 L480 70 H700 L720 60 L735 70 H780 L790 76 L802 20 L814 96 L824 70 H870 L900 56 L930 70 H1200"/></svg>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__inner">
+      <div>
+        <a class="brand" href="/">
+          <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#1d2944"/><path d="M3 18 H10 L12.5 13 L15 23 L18 6 L21 26 L23 18 H29" fill="none" stroke="#ff5a61" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/></svg>
+          Ensight-AI, Inc.
+        </a>
+        <p style="margin-top:10px">A Yale School of Medicine spinout.</p>
+      </div>
+      <div>
+        <a href="mailto:contact@ensight-ai.com">contact@ensight-ai.com</a>
+      </div>
+    </div>
+    <p class="footer__legal">ECGvision and ECGvision-TTR are investigational and have not been cleared or approved by the U.S. Food and Drug Administration. They are not commercially available. Information on this website is not intended as medical advice. &copy; <span id="year">2026</span> Ensight-AI, Inc. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var header = document.querySelector('.header');
+    var onScroll = function () { header.classList.toggle('is-scrolled', window.scrollY > 24); };
+    onScroll(); window.addEventListener('scroll', onScroll, { passive: true });
+
+    var toggle = document.querySelector('.nav-toggle'), nav = document.getElementById('nav');
+    toggle.addEventListener('click', function () {
+      var open = nav.classList.toggle('is-open');
+      header.classList.toggle('menu-open', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+    nav.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A') { nav.classList.remove('is-open'); header.classList.remove('menu-open'); toggle.setAttribute('aria-expanded', 'false'); }
+    });
+
+    var els = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('is-in'); io.unobserve(en.target); } });
+      }, { rootMargin: '0px 0px -8% 0px' });
+      els.forEach(function (el) { io.observe(el); });
+    } else { els.forEach(function (el) { el.classList.add('is-in'); }); }
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  })();
+</script>
+</body>
+</html>
