@@ -3,7 +3,7 @@
 Source for the Ensight-AI website. It is a plain static site: one HTML page, one stylesheet, and no build step or framework. To change the site, edit the files and push. The site is meant to be served by GitHub Pages from the `main` branch.
 
 ```
-index.html              the whole site (sections: hero, problem, approach, ECGvision-TTR, pipeline, partners, science, milestones, contact)
+index.html              the whole site (sections: hero, problem, approach, ECGvision-ATTR, pipeline, partners, science, milestones, contact)
 assets/styles.css       all styling
 assets/og-image.png     preview image used when the link is shared (LinkedIn, Slack, iMessage)
 assets/apple-touch-icon.png
@@ -59,6 +59,6 @@ Do this only after the new site is live over HTTPS. If the domain is registered 
 
 ## Editing notes
 
-- **Regulatory language.** ECGvision-TTR has FDA Breakthrough Device Designation, which is not clearance. Keep the "investigational / not cleared or approved" disclaimers in the product section and footer. Performance numbers are attributed to the peer-reviewed research models, with citations.
+- **Regulatory language.** ECGvision-ATTR has FDA Breakthrough Device Designation, which is not clearance. Keep the "investigational / not cleared or approved" disclaimers in the product section and footer. Performance numbers are attributed to the peer-reviewed research models, with citations.
 - **Adding a team section.** Copy the `cards-3` block from the "Who we work with" section into a new `<section id="team">` and add a nav link.
 - **Logo.** The ECG-mark logo is inline SVG in the header and footer, plus `favicon.svg`. Replace all three if a designed logo becomes available.
