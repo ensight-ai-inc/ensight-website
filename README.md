@@ -1,6 +1,6 @@
 # ensight-ai.com
 
-Source for the Ensight-AI website. It is a plain static site: one HTML page, one stylesheet, and no build step or framework. To change the site, edit the files and push. The site is meant to be served by GitHub Pages from the `main` branch.
+Source for the Ensight-AI website, hosted in the `ensight-ai-inc` GitHub organization. It is a plain static site: one HTML page, one stylesheet, and no build step or framework. To change the site, edit the files and push. The site is meant to be served by GitHub Pages from the `main` branch.
 
 ```
 index.html              the whole site (sections: hero, problem, approach, ECGvision-ATTR, pipeline, partners, science, milestones, contact)
@@ -26,10 +26,10 @@ Then open http://localhost:8000.
 ### 1. Turn on GitHub Pages
 
 1. Merge the site into `main`.
-2. Make the repository public, or upgrade to GitHub Pro. GitHub Pages on a free personal account only works with public repositories. The repository contains only public website content.
+2. Make the repository public. GitHub Pages on a free organization only works with public repositories. The repository contains only public website content.
 3. Go to **Settings → Pages**. Set **Source** to "Deploy from a branch", choose **Branch** `main` and folder `/ (root)`, and save.
 4. In the same page, set **Custom domain** to `www.ensight-ai.com`. After DNS resolves, tick **Enforce HTTPS**.
-5. Recommended: verify the domain under **Settings (account) → Pages → Verified domains**. This adds one TXT record and prevents domain takeover.
+5. Recommended: verify the domain under **ensight-ai-inc organization Settings → Pages → Verified domains**. This adds one TXT record and prevents domain takeover.
 
 ### 2. Point DNS at GitHub Pages
 
@@ -53,7 +53,7 @@ Delete **only** the five website records: the four Squarespace `A` records and t
 | A     | @    | 185.199.109.153 |
 | A     | @    | 185.199.110.153 |
 | A     | @    | 185.199.111.153 |
-| CNAME | www  | rohankhera.github.io |
+| CNAME | www  | ensight-ai-inc.github.io |
 
 **Do not touch** the email records: the `MX` records, the `v=spf1` TXT record, and `google._domainkey`. If Squarespace shows a **Google Workspace** preset, leave it as is. Email doesn't use the website records, so it keeps working through the switch with no downtime.
 
