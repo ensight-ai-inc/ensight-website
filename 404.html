@@ -5,16 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Page not found | Ensight-AI</title>
   <meta name="robots" content="noindex">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b1220'/%3E%3Cpath d='M3 18 H10 L12.5 13 L15 23 L18 6 L21 26 L23 18 H29' fill='none' stroke='%23ff5a61' stroke-width='2.4' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Inter+Tight:wght@650&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; text-align: center; padding: 24px; box-sizing: border-box;
+           background: #0b1220; color: #fff; font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif; }
+    .kicker { display: block; font-size: .78rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: #d6383f; margin-bottom: 18px; }
+    h1 { font-family: "Inter Tight", "Inter", sans-serif; font-size: clamp(2rem, 4vw, 3rem); letter-spacing: -.022em; margin: 0; }
+    p { color: #a9b3c7; font-size: 1.15rem; margin: 20px auto 32px; }
+    a { display: inline-block; padding: 14px 22px; border-radius: 999px; background: #d6383f; color: #fff; font-weight: 600; text-decoration: none; }
+    a:hover { background: #bf2d34; }
+  </style>
 </head>
-<body style="background:var(--ink);color:#fff;min-height:100vh;display:grid;place-items:center;text-align:center">
-  <main class="wrap">
+<body>
+  <main>
     <span class="kicker">404</span>
-    <h1 style="font-size:clamp(2rem,4vw,3rem)">This page doesn&rsquo;t exist.</h1>
-    <p class="lede" style="color:var(--muted-on-dark);margin:20px auto 32px">It may have moved when we updated our website.</p>
-    <a class="btn btn--primary" href="/">Go to the homepage</a>
+    <h1>This page doesn&rsquo;t exist.</h1>
+    <p>It may have moved when we updated our website.</p>
+    <a href="/">Go to the homepage</a>
   </main>
 </body>
 </html>
