@@ -60,5 +60,5 @@ Do this only after the new site is live over HTTPS. If the domain is registered 
 ## Editing notes
 
 - **Regulatory language.** ECGvision-TTR has FDA Breakthrough Device Designation, which is not clearance. Keep the "investigational / not cleared or approved" disclaimers in the product section and footer. Performance numbers are attributed to the peer-reviewed research models, with citations.
-- **Adding a team section.** Copy the `cards-4` block from the "Who we work with" section into a new `<section id="team">` and add a nav link.
+- **Adding a team section.** Copy the `cards-3` block from the "Who we work with" section into a new `<section id="team">` and add a nav link.
 - **Logo.** The ECG-mark logo is inline SVG in the header and footer, plus `favicon.svg`. Replace all three if a designed logo becomes available.
