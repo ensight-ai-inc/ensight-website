@@ -63,6 +63,16 @@ Recommended while you're in DNS: the domain has no DMARC record. Add a TXT recor
 
 Do this only after the new site loads over HTTPS. Cancel only the **website** subscription. The domain is a separate Squarespace Domains registration, paid through 15 Nov 2027. Keep it on auto-renew.
 
+Before cancelling anything, check who bills Google Workspace. Go to **Google Admin console → Billing → Subscriptions**. If Workspace was bought through Google Domains, billing likely moved to Squarespace, which then acts as the Workspace reseller. In that case, leave that subscription alone; cancelling it would stop email. Optionally, move Workspace billing to Google directly first.
+
+**Leaving Squarespace entirely (optional).** Transfer the domain to another registrar, such as Cloudflare (at-cost, about $10/year). Do it in this order to avoid any email outage:
+
+1. Add the domain to the new DNS provider and confirm every record above was copied, especially MX, SPF, and DKIM.
+2. Switch the domain's nameservers to the new provider, then wait 24 hours.
+3. Unlock the domain in Squarespace, get the transfer code, and start the transfer.
+
+Don't start the transfer while the domain still uses the current nameservers (`ns-cloud-a*.googledomains.com`). They come with the Squarespace registration and may stop answering once the domain leaves.
+
 ### 4. Google Search Console
 
 1. Add `ensight-ai.com` as a Domain property. If Google Workspace already verified the domain, this is usually instant.
