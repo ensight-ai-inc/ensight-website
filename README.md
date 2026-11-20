@@ -33,9 +33,19 @@ Then open http://localhost:8000.
 
 ### 2. Point DNS at GitHub Pages
 
-Make these changes wherever the domain's DNS is managed. If the domain was bought through Google Domains or Squarespace, that is **Squarespace → Domains → ensight-ai.com → DNS**.
+The domain is registered with **Squarespace Domains** (moved over from Google Domains), so DNS is managed at **Squarespace → Domains → ensight-ai.com → DNS**.
 
-Remove the Squarespace website records: the `A` records on `@` and the `www` CNAME that point to Squarespace. In Squarespace DNS these appear as the **Squarespace Defaults** preset. Then add:
+The current records, as of November 2026:
+
+| Purpose | Type | Host | Value |
+|---|---|---|---|
+| Website (Squarespace) | A | @ | 198.185.159.144, 198.185.159.145, 198.49.23.144, 198.49.23.145 |
+| Website (Squarespace) | CNAME | www | ext-cust.squarespace.com |
+| Email (Google Workspace) | MX | @ | aspmx.l.google.com (1), alt1/alt2.aspmx.l.google.com (5), alt3/alt4.aspmx.l.google.com (10) |
+| Email (Google Workspace) | TXT | @ | v=spf1 include:_spf.google.com ~all |
+| Email (Google Workspace) | TXT | google._domainkey | v=DKIM1; k=rsa; p=... |
+
+Delete **only** the five website records: the four Squarespace `A` records and the `www` CNAME. In Squarespace DNS they may appear as the **Squarespace Defaults** preset. Then add:
 
 | Type  | Host | Value |
 |-------|------|-------|
@@ -45,11 +55,13 @@ Remove the Squarespace website records: the `A` records on `@` and the `www` CNA
 | A     | @    | 185.199.111.153 |
 | CNAME | www  | rohankhera.github.io |
 
-**Do not touch** the email records: `MX` records (Google), the `TXT` record starting `v=spf1`, `google._domainkey` (DKIM), `_dmarc`, and any `google-site-verification` TXT. Google Workspace email keeps working because those records are unchanged.
+**Do not touch** the email records: the `MX` records, the `v=spf1` TXT record, and `google._domainkey`. If Squarespace shows a **Google Workspace** preset, leave it as is. Email doesn't use the website records, so it keeps working through the switch with no downtime.
+
+Recommended while you're in DNS: the domain has no DMARC record. Add a TXT record on host `_dmarc` with value `v=DMARC1; p=none`. This improves deliverability, since Gmail and Yahoo increasingly expect DMARC.
 
 ### 3. Cancel the Squarespace website plan, but keep the domain
 
-Do this only after the new site is live over HTTPS. If the domain is registered at Squarespace, cancel only the **website** subscription and keep the **domain** registration (about $20/year) on auto-renew.
+Do this only after the new site loads over HTTPS. Cancel only the **website** subscription. The domain is a separate Squarespace Domains registration, paid through 15 Nov 2027. Keep it on auto-renew.
 
 ### 4. Google Search Console
 
